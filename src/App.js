@@ -15,10 +15,10 @@ function App() {
    
     dispatch(getUsersData());
   }, []);
-  console.log("stateWorld data",users);
+  console.log("stateWorld data",users.data);
   return (
     <div className='page-styles'>
-    { users.data !== "undefined" ? 
+    { users.data.length !==  0 ? 
        
     <Card style={{ width: '18rem', height:"16rem" }}>
       <Card.Header style={{  height:"6rem", position:"relative", background:"#73ffd6" }}>
